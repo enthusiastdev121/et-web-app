@@ -1,0 +1,38 @@
+export const Invites = [
+  {
+    id: "1",
+    name: "John Smith",
+    time: "3 Min ago",
+    body: `has Invited for the Job Dater' in the production 'Dating Disasters Comedic Web Series.`,
+    image: "messages-img-2.png",
+    deadline: "Submission Deadline:- 20 oct. 2020",
+    invited: true,
+  },
+  {
+    id: "2",
+    name: "John Smith",
+    time: "3 Min ago",
+    body: `has saved your invitation(Reclip App Explainer Video) in there draft`,
+    image: "messages-img-2.png",
+    deadline: "Submission Deadline:- 20 oct. 2020",
+    invited: true,
+  },
+  {
+    id: "3",
+    name: "John Smith",
+    time: "3 Min ago",
+    body: `has Invited for the Job Dater' in the production 'Dating Disasters Comedic Web Series.`,
+    image: "messages-img-2.png",
+    deadline: "Submission Deadline:- 20 oct. 2020",
+    invited: true,
+  },
+  {
+    id: "4",
+    name: "John Smith",
+    time: "3 Min ago",
+    body: `has saved your invitation(Reclip App Explainer Video) in there draft`,
+    image: "messages-img-2.png",
+    deadline: "Submission Deadline:- 20 oct. 2020",
+    invited: true,
+  },
+];

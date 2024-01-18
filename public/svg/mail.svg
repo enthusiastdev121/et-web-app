@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.125" height="38.833" viewBox="0 0 49.125 38.833">
+  <g id="mail-notification-outline" transform="translate(-2.25 -4.508)">
+    <path id="Path_216" data-name="Path 216" d="M32.522,6.75H7.662a4.287,4.287,0,0,0-4.287,4.287V36.755a4.287,4.287,0,0,0,4.287,4.287H43.531a4.287,4.287,0,0,0,4.287-4.287V22.074" transform="translate(0 1.175)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+    <path id="Path_217" data-name="Path 217" d="M7.875,11.25l15.431,12,9.322-7.036" transform="translate(2.358 3.533)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+    <path id="Path_218" data-name="Path 218" d="M37.276,10.771a5.138,5.138,0,1,1-5.138-5.138,5.137,5.137,0,0,1,5.138,5.138Z" transform="translate(12.38 0.589)" fill="#fff"/>
+    <path id="Path_219" data-name="Path 219" d="M32.731,18.212a6.852,6.852,0,1,1,6.852-6.852A6.852,6.852,0,0,1,32.731,18.212Zm0-10.276a3.429,3.429,0,1,0,3.423,3.429,3.429,3.429,0,0,0-3.423-3.429Z" transform="translate(11.792)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="24.75" viewBox="0 0 31.5 24.75">
+  <g id="camera-outline" transform="translate(-2.25 -5.625)">
+    <path id="Path_437" data-name="Path 437" d="M24.647,10.454,22.775,7.5a2.025,2.025,0,0,0-1.541-.747H14.765a2.025,2.025,0,0,0-1.541.747l-1.872,2.957a2.008,2.008,0,0,1-1.508.8H5.625a2.25,2.25,0,0,0-2.25,2.25V27a2.25,2.25,0,0,0,2.25,2.25h24.75A2.25,2.25,0,0,0,32.625,27V13.5a2.25,2.25,0,0,0-2.25-2.25H26.227a2.147,2.147,0,0,1-1.579-.8Z" fill="none" stroke="#B2D8FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+    <path id="Path_438" data-name="Path 438" d="M23.625,19.125A5.625,5.625,0,1,1,18,13.5a5.625,5.625,0,0,1,5.625,5.625Z" fill="none" stroke="#B2D8FF" stroke-miterlimit="10" stroke-width="2.25"/>
+    <path id="Path_439" data-name="Path 439" d="M8.719,11.109V9.562H7.031v1.547" fill="none" stroke="#B2D8FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+  </g>
+</svg>

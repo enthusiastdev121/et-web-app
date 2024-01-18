@@ -1,0 +1,96 @@
+import { rgba } from "polished";
+import { HiOutlineChevronRight } from "react-icons/hi";
+import { IoChevronForward } from "react-icons/io5";
+import styled from "styled-components";
+import { H2 } from "@/styles/Typography.styled";
+import Link from "next/link";
+
+const ITEMS = [
+  {
+    id: 1,
+    label: "Acting Jobs",
+    link: "/acting-auditions",
+  },
+  {
+    id: 2,
+    label: "Modeling Jobs",
+    link: "/modeling-auditions",
+  },
+  {
+    id: 3,
+    label: "Dance Jobs",
+    link: "/dance-auditions",
+  },
+  {
+    id: 4,
+    label: "Crew Jobs",
+    link: "/crew-jobs",
+  },
+  {
+    id: 5,
+    label: "Film & Stage Crew Jobs",
+    link: "/film-crew-auditions",
+  },
+  {
+    id: 6,
+    label: "Makeup artists, hair & fashion stylists",
+    link: "/makeup-artists-audition",
+  },
+];
+
+export default function JobCategoryList() {
+  return (
+    <Root>
+      <Heading>Auditions, Jobs Categories</Heading>
+
+      <Items>
+        {ITEMS.map((i) => {
+          return (
+            <Item key={i.id}>
+              <Link href={i.link}>
+                <a className="flex items-center">
+                  <div className="icon">
+                    <IoChevronForward />
+                  </div>
+                  {i.label}
+                </a>
+              </Link>
+            </Item>
+          );
+        })}
+      </Items>
+    </Root>
+  );
+}
+
+const Root = styled.div``;
+const Heading = styled.div`
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+`;
+const Items = styled.div`
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
+`;
+const Item = styled.div`
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  .icon {
+    margin-right: 4px;
+  }
+  &:hover {
+    background: ${(p) => rgba(p.theme.primary, 0.08)};
+    cursor: pointer;
+    padding-left: 1.3rem;
+    color: ${(p) => p.theme.primary};
+  }
+`;

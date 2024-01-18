@@ -1,0 +1,16 @@
+# Step 1: Build the app in image 'builder'
+FROM node:14.17.1 as builder
+RUN ls
+WORKDIR /usr/src/app
+RUN ls
+COPY . .
+RUN ls
+# RUN npm install --save-dev @types/react@18.0.2
+# RUN npm install --save-dev typescript @types/react @types/node
+RUN npm install
+RUN npm install @progress/kendo-react-common
+RUN npm install @progress/kendo-licensing
+#RUN npm rebuild
+RUN npm run build
+
+CMD [ "npm","start" ]

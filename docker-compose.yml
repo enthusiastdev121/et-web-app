@@ -1,0 +1,75 @@
+version: '3.5'
+services:
+  auditions.com:
+    image: audition:latest
+    build:
+        context: .
+        args:
+           image_name: audition
+   
+
+    ports:
+      - 3000:3000
+    # volumes:
+    #   # - ./:/usr/src/app
+    #   - ./env/.env.auditions:/usr/src/app/.env
+    # command: 
+    #   bash -c "cd /usr/src/app && npm install && npm install @progress/kendo-react-common && npm install @progress/kendo-licensing && npm rebuild && npm run build && npm start"
+    networks:
+    - frontend
+  
+  modeling.net:
+    image: modeling:latest
+    build:
+        context: .
+        args:
+           image_name: modeling
+    ports:
+      - 3003:3000
+    # volumes:
+    #   # - ./:/usr/src/app
+    #   - ./env/.env.modeling:/usr/src/app/.env
+    # command: 
+    #   bash -c "cd /usr/src/app && npm install && npm install @progress/kendo-react-common && npm install @progress/kendo-licensing && npm rebuild && npm run build && npm start"
+    networks:
+    - frontend
+
+
+  talento.com:
+    image: talento:latest
+    build:
+        context: .
+        args:
+           image_name: talento
+        
+    ports:
+      - 3004:3000
+    # volumes:
+    #   # - ./:/usr/src/app
+    #   - ./env/.env.talento:/usr/src/app/.env
+    # command: 
+    #   bash -c "cd /usr/src/app && npm install && npm install @progress/kendo-react-common && npm install @progress/kendo-licensing && npm rebuild && npm run build && npm start"
+    networks:
+    - frontend
+
+  discovertalent.com:
+    image: discovertalent:latest
+    build:
+        context: .
+        args:
+           image_name: discovertalent
+    ports:
+      - 3005:3000
+    # volumes:
+    #   # - ./:/usr/src/app
+    #   - ./env/.env.adorableKids:/usr/src/app/.env
+    # command: 
+    #   bash -c "cd /usr/src/app && npm install && npm install @progress/kendo-react-common && npm install @progress/kendo-licensing && npm rebuild && npm run build && npm start"
+    networks:
+    - frontend
+
+networks:
+  frontend:
+    external:
+      name: frontend
+

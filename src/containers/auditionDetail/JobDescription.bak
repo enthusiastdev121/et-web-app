@@ -1,0 +1,85 @@
+import { PrimaryBtnLightRounded } from "@/styles/Btn.styled";
+import { H1 } from "@/styles/Typography.styled";
+import { AiOutlineTwitter, AiOutlineStar } from "react-icons/ai";
+import { BiDotsVerticalRounded } from "react-icons/bi";
+import { FaFacebookF } from "react-icons/fa";
+import { FiClock } from "react-icons/fi";
+import { HiMail } from "react-icons/hi";
+import { JobDescriptionContainer } from "./AuditionDetail.styled";
+
+export default function JobDescription({ res }: any) {
+  return (
+    <JobDescriptionContainer>
+      <div className="flex items-center justify-between mb-5">
+        <H1>{res.title}</H1>
+        {/* <BiDotsVerticalRounded className="text-lg" /> */}
+      </div>
+
+      <p
+        className="my-3"
+        dangerouslySetInnerHTML={{
+          __html: res.desc,
+        }}
+      />
+
+      <div className="flex flex-col md:flex-row justify-between gap-5">
+        <div className="mt-5">
+          <h3 className="font-bold mb-2">Audition details</h3>
+          <ul className="font-semibold">
+            <li>
+              Location{" "}
+              <span>
+                {res.location} - {res.zip}
+              </span>
+            </li>
+            <li>
+              Submission Type <span>{res.type || "N/A"}</span>
+            </li>
+            <li>
+              Union <span>{res.union}</span>
+            </li>
+            <li>
+              Rate/Pay <span>${res.rate}</span>
+            </li>
+            <li>
+              Release Date <span>{res.createdAt}</span>
+            </li>
+            <li>
+              Audition Date <span>{res.expiration}</span>
+            </li>
+            <li>
+              Casting Category <span>Theatre - Non-Equity</span>
+            </li>
+            <li>
+              Markets <span>{res.market || "N/A"}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex flex-col gap-3 items-start">
+          <div className="social-icons font-semibold flex items-center gap-2">
+            Share
+            <span className="social-icon">
+              <HiMail />
+            </span>
+            <span className="social-icon">
+              <FaFacebookF />
+            </span>
+            <span className="social-icon">
+              <AiOutlineTwitter />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-2 p-2 border-2 mt-5 rounded-3xl shortlisting">
+        <span className="clock-icon">
+          <FiClock />
+        </span>
+        <div>
+          <strong>Shortlisting is underway now..</strong> We recommend applying as soon as possible.
+        </div>
+      </div>
+    </JobDescriptionContainer>
+  );
+}
