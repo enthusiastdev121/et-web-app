@@ -318,3 +318,5 @@ background: ${(p) => rgba(p.theme.primary, 0.1)};
 
 `;
 
+
+// Users have requested the ability to search data within tables 8
