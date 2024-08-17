@@ -204,3 +204,5 @@ const Item = styled(motion.a)`
     padding-left: 1.4rem;
   }
 `;
+
+// Users have requested the ability to search data within tables 2
