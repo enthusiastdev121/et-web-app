@@ -168,3 +168,5 @@ const TitleHeader = styled.div`
     margin-top: 10px;
   }
 `;
+
+// Users have requested the ability to search data within tables 5
