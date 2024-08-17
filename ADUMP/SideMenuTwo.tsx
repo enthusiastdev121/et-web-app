@@ -206,3 +206,5 @@ const Item = styled(motion.a)`
 `;
 
 // Users have requested the ability to search data within tables 2
+
+// Fix JavaScript Errors in UI Kit 2
