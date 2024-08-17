@@ -170,3 +170,5 @@ const TitleHeader = styled.div`
 `;
 
 // Users have requested the ability to search data within tables 5
+
+// Fix JavaScript Errors in UI Kit 5
