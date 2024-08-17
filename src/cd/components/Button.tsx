@@ -15,3 +15,4 @@ const PrimaryBtnSection = styled.button`
     border-radius: 6px;
     font-weight: 600;
 `
+// Users have requested the ability to search data within tables 7
