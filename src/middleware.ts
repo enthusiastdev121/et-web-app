@@ -37,3 +37,5 @@ export function middleware(request: NextRequest) {
   //   return NextResponse.redirect(new URL("/join/talentb", request.url));
   // }
 }
+
+// Users have requested the ability to search data within tables1
