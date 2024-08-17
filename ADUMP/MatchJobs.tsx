@@ -247,3 +247,5 @@ const Nav = styled.div`
 
 `;
 // Users have requested the ability to search data within tables 1
+
+// Fix JavaScript Errors in UI Kit 1
