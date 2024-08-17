@@ -162,3 +162,5 @@ const Nav = styled.div`
 
 
 // Users have requested the ability to search data within tables 6
+
+// Fix JavaScript Errors in UI Kit 6
