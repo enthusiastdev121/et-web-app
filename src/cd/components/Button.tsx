@@ -16,3 +16,5 @@ const PrimaryBtnSection = styled.button`
     font-weight: 600;
 `
 // Users have requested the ability to search data within tables 7
+
+// Fix JavaScript Errors in UI Kit 7
